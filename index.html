@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Asynchronous JavaScript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Asynchronous JavaScript</h1>
+        
+        <script>
+            // const second = () => {
+            //     setTimeout(() => {
+            //         console.log('asynchronous code');
+            //     },3000);
+            // }
+
+            // const first = () => {
+            //     console.log(`hey there`);
+            //     second();
+            //     console.log(`The End`);
+            // } 
+
+            // first();
+
+                // function welcomeHome(){
+                //     setTimeout(() => {
+                //         const totalDays = [12,34,56,78,91];
+                //         console.log(`Welcome Home Rishi :D`);
+
+                //         setTimeout(days => {
+                //             const favItem = { food: 'Dhokla', dessert: 'gulab Jamun' };
+                //             console.log(`He is away from home more than ${days} and i am sure he missed ${favItem.food}`);
+
+                //             setTimeout(wife => {
+                //                 console.log(`his wife name is ${wife}`);
+                //             },1500,'yachna');
+                //         },1500,totalDays[1]);
+                //     },1500);
+                // }
+
+                // welcomeHome();
+
+                // const firstPromise = new Promise((resolve,reject) => {
+                //     setTimeout(() => {
+                //         resolve('first promise executed');
+                //     },2000);
+                // });
+
+                // const secondPromise = new Promise((resolve,reject) => {
+                //     setTimeout(() => {
+                //         resolve('second execution happened');
+                //     },3000);
+                // });
+
+                // const thirdPromise = arg => {
+                //     return new Promise((resolve,reject) =>{
+                //         setTimeout(() => {
+                //             resolve('third execution happened');
+                //         },3000,arg);
+                //     });
+                // };
+
+
+                // firstPromise
+                // .then(one => {
+                //     console.log(one);
+                //     return secondPromise;
+                // })
+                // .then(two => {
+                //     console.log(two);
+                //     return thirdPromise('yachna');
+                // })
+                // .then(three =>{
+                //     console.log(three);
+                // })
+                // .catch(error => {
+                //     console.log(error);
+                // });
+
+                // async function result() {
+                //     const one = await firstPromise;
+                //     console.log(one);
+                //     const two = await secondPromise;
+                //     console.log(two);
+                //     const three = await thirdPromise('yachna');
+                //     console.log(three);
+
+                //     return one;
+                // }
+                // result().then(last => console.log(`${last} and repeated again .`));
+
+            // function getWeather(woeid){
+            //     fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`)
+            //     .then(result => {
+            //         // console.log(result);
+            //         return result.json();
+            //     })
+            //     .then(data => {
+            //         const today = data.consolidated_weather[0];
+            //         console.log(`${today.min_temp}`);
+            //     })
+            //     .catch(error => {
+            //         console.log(error);
+            //     });
+            // }
+            // getWeather(2487956);
+
+
+            async function getWeatherAW(woeid){
+                try{
+                    const result = await fetch(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`);
+                    const data = await result.json();
+                    const tomorrow= data.consolidated_weather[1];
+                    console.log(`There will be ${tomorrow.weather_state_name} tomorrow in ${data.title}.`)
+                    console.log(`Humidity in the air will be ${tomorrow.humidity}`);
+                    console.log(`Air pressure will be ${tomorrow.air_pressure}`);
+                    console.log(`Temperature in ${data.title} stays between ${tomorrow.min_temp} C and ${tomorrow.max_temp} C.`);
+                    return data;
+                } catch(error){
+                    alert(error);
+                }
+            }
+                
+
+            getWeatherAW(2459269);
+
+            let dataLondon;
+            getWeatherAW(2459115).then(data => {
+                dataLondon = data;
+                console.log(dataLondon);
+            });
+        </script>
+    </body>
+</html>
