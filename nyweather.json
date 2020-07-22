@@ -1,0 +1,150 @@
+{
+	"consolidated_weather": [{
+		"id": 5921724342206464,
+		"weather_state_name": "Light Rain",
+		"weather_state_abbr": "lr",
+		"wind_direction_compass": "SSE",
+		"created": "2020-07-22T15:18:43.791106Z",
+		"applicable_date": "2020-07-22",
+		"min_temp": 25.335,
+		"max_temp": 31.39,
+		"the_temp": 31.555,
+		"wind_speed": 5.31900588949601,
+		"wind_direction": 162.83519418179853,
+		"air_pressure": 1016.5,
+		"humidity": 65,
+		"visibility": 10.295809969776505,
+		"predictability": 75
+	}, {
+		"id": 6307647454183424,
+		"weather_state_name": "Light Rain",
+		"weather_state_abbr": "lr",
+		"wind_direction_compass": "SW",
+		"created": "2020-07-22T15:18:46.778879Z",
+		"applicable_date": "2020-07-23",
+		"min_temp": 26.095,
+		"max_temp": 30.57,
+		"the_temp": 31.11,
+		"wind_speed": 5.948184292730454,
+		"wind_direction": 232.6290312729494,
+		"air_pressure": 1015.5,
+		"humidity": 63,
+		"visibility": 13.841043307086615,
+		"predictability": 75
+	}, {
+		"id": 6159386256867328,
+		"weather_state_name": "Light Rain",
+		"weather_state_abbr": "lr",
+		"wind_direction_compass": "SW",
+		"created": "2020-07-22T15:18:49.690668Z",
+		"applicable_date": "2020-07-24",
+		"min_temp": 25.775,
+		"max_temp": 31.17,
+		"the_temp": 30.92,
+		"wind_speed": 3.108852323690978,
+		"wind_direction": 226.49999999999997,
+		"air_pressure": 1016.5,
+		"humidity": 60,
+		"visibility": 13.261303984729182,
+		"predictability": 75
+	}, {
+		"id": 5740432162029568,
+		"weather_state_name": "Light Cloud",
+		"weather_state_abbr": "lc",
+		"wind_direction_compass": "SE",
+		"created": "2020-07-22T15:18:52.786448Z",
+		"applicable_date": "2020-07-25",
+		"min_temp": 26.189999999999998,
+		"max_temp": 32.269999999999996,
+		"the_temp": 32.065,
+		"wind_speed": 3.7422128308385694,
+		"wind_direction": 132.3274148473907,
+		"air_pressure": 1016.0,
+		"humidity": 54,
+		"visibility": 12.729099558577904,
+		"predictability": 70
+	}, {
+		"id": 6598183167721472,
+		"weather_state_name": "Light Cloud",
+		"weather_state_abbr": "lc",
+		"wind_direction_compass": "WSW",
+		"created": "2020-07-22T15:18:55.800511Z",
+		"applicable_date": "2020-07-26",
+		"min_temp": 26.755,
+		"max_temp": 33.97,
+		"the_temp": 33.95,
+		"wind_speed": 5.711363636692384,
+		"wind_direction": 245.51595731802684,
+		"air_pressure": 1013.0,
+		"humidity": 50,
+		"visibility": 15.682476835281953,
+		"predictability": 70
+	}, {
+		"id": 6370377229926400,
+		"weather_state_name": "Light Cloud",
+		"weather_state_abbr": "lc",
+		"wind_direction_compass": "WSW",
+		"created": "2020-07-22T15:18:58.692972Z",
+		"applicable_date": "2020-07-27",
+		"min_temp": 27.235,
+		"max_temp": 33.97,
+		"the_temp": 34.59,
+		"wind_speed": 6.312853535353535,
+		"wind_direction": 258.5,
+		"air_pressure": 1005.0,
+		"humidity": 54,
+		"visibility": 9.999726596675416,
+		"predictability": 70
+	}],
+	"time": "2020-07-22T11:30:27.677180-04:00",
+	"sun_rise": "2020-07-22T05:43:59.628599-04:00",
+	"sun_set": "2020-07-22T20:21:22.571714-04:00",
+	"timezone_name": "LMT",
+	"parent": {
+		"title": "New York",
+		"location_type": "Region / State / Province",
+		"woeid": 2347591,
+		"latt_long": "42.855350,-76.501671"
+	},
+	"sources": [{
+		"title": "BBC",
+		"slug": "bbc",
+		"url": "http://www.bbc.co.uk/weather/",
+		"crawl_rate": 360
+	}, {
+		"title": "Forecast.io",
+		"slug": "forecast-io",
+		"url": "http://forecast.io/",
+		"crawl_rate": 480
+	}, {
+		"title": "HAMweather",
+		"slug": "hamweather",
+		"url": "http://www.hamweather.com/",
+		"crawl_rate": 360
+	}, {
+		"title": "Met Office",
+		"slug": "met-office",
+		"url": "http://www.metoffice.gov.uk/",
+		"crawl_rate": 180
+	}, {
+		"title": "OpenWeatherMap",
+		"slug": "openweathermap",
+		"url": "http://openweathermap.org/",
+		"crawl_rate": 360
+	}, {
+		"title": "Weather Underground",
+		"slug": "wunderground",
+		"url": "https://www.wunderground.com/?apiref=fc30dc3cd224e19b",
+		"crawl_rate": 720
+	}, {
+		"title": "World Weather Online",
+		"slug": "world-weather-online",
+		"url": "http://www.worldweatheronline.com/",
+		"crawl_rate": 360
+	}],
+	"title": "New York",
+	"location_type": "City",
+	"woeid": 2459115,
+	"latt_long": "40.71455,-74.007118",
+	"timezone": "US/Eastern"
+}
