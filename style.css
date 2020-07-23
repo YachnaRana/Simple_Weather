@@ -4,18 +4,18 @@
     box-sizing: border-box;
     font-weight: normal;
 }
-   
-button {
-    cursor: pointer;
-}
 
-body{
-    background-image: url("vendors/img/backk.jpg");
+html,body{
+    background-color: rgb(47, 105, 105);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: rgb(5, 5, 5);
     font-family: 'Rowdies', cursive;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .search_div{
@@ -28,81 +28,91 @@ body{
 }
 
 .searchBtnfield{
-    display: flex;
-    justify-items: stretch;
+    /* display: flex;
+    justify-items: stretch; */
 }
 
 .search_field{
-    width: 300px;
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    width: 250px;
     height: 40px;
+    border: black 1px solid;
+    border-radius: 32px 32px 32px 32px;
+    cursor: pointer;
 }
 
-.btn{
-    width: 50px;
-    height: 40px;
+
+
+input::placeholder{
+    font-size: 18px;
+    opacity: 0.7;
 }
-
-
 
 .box{
-    background-color: rgb(255, 255, 255);
-
-    opacity: 0.7;
-    border: teal 2px solid;
-    width: 650px;
-    height: 470px;
+    background: linear-gradient(140deg, rgb(24, 12, 95), rgb(121, 19, 168));
+    /* background-color: rgb(94, 212, 216); */
     position: absolute;
-    left: 400px;
-    top: 200px;
-   
+    top: 30%;
+    left: 39%;
+    /* opacity: 0.7; */
+    width: 320px;
+    height: 500px;
+    box-shadow:1px 7px 5px 5px rgba(68, 68, 68, 0.6); ;
 }
-
-.icon img{
-    position: absolute;
-    left: 1%;
-    top: 1%;
-    width: 160px;
-    height: 150px;
-}
-
-
 
 
 .city_name{
     position: absolute;
-    left: 65%;
-    top: 7%;
-    font-size: 50px;
-    font-weight: 500;
+    left: 35%;
+    top: 43%;
+    font-size: 24px;
+    
 }
 
 .temp{
     position: absolute;
-    left: 25%;
-    top: 7%;
-    font-size: 60px;
+    left: 28%;
+    top: 20%;
+    font-size: 90px;
     
 }
+
+.celci{
+    position: absolute;
+    left: 62%;
+    top: 23%;
+    font-size: 32px;
+}
+
+.max{
+    position: absolute;
+    left: 61%;
+    top: 31%;
+    font-size: 12px;
+}
+.max i{
+    font-size: 18px;
+}
+
+.min{
+    position: absolute;
+    left: 61%;
+    top: 35%;
+    font-size: 12px;
+}
+.min i{
+    font-size: 18px;
+}
+
+
 
 .span{
     position: absolute;
     left: 36%;
     top: 7%;
     font-size: 60px;
-}
-
-.humidity{
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    font-size: 20px;
-}
-
-.wind{
-    position: absolute;
-    top: 47%;
-    left: 25%;
-    font-size: 20px;
 }
 
 .date{
@@ -114,12 +124,39 @@ body{
 
 .state{
     position: absolute;
-    top: 47%;
-    left: 75%;
-    font-size: 20px;
+    left: 38%;
+    top: 49%;
+    font-size: 16px;
 }
 
+.predictability{
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    font-size: 14px;
+}
 
+.humidity{
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    font-size: 14px;
+}
+
+.wind{
+    position: absolute;
+    top: 3%;
+    left: 75%;
+    font-size: 14px;
+}
+
+.state_icon_svg{
+    position: absolute;
+    top: 56%;
+    left: 38%;
+    height: 100px;
+    width: 100px;
+}
 
 table{
     
