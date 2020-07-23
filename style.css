@@ -12,11 +12,125 @@ html,body{
     background-attachment: fixed;
     color: rgb(5, 5, 5);
     font-family: 'Rowdies', cursive;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
+
+.row{
+    max-width: 320px;
+    margin: 4% auto 0 auto;
+}
+
+.container{
+    background: linear-gradient(140deg, rgb(24, 12, 95), rgb(121, 19, 168));
+    margin: 13% 41% 1% 39%;
+    width: 320px;
+    height: 500px;
+    box-shadow:1px 7px 5px 5px rgba(68, 68, 68, 0.6); ;
+    display: inline-block;
+}
+
+/* First row */
+.row_one{
+    margin-bottom: 60px;
+}
+
+.predictability{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.humidity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.wind{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Second row */
+
+
+.temperature{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+    flex-wrap: wrap;
+    font-size: 600%;
+    /* margin-right: -30px; */
+}
+.min-max{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.max{
+    /* margin: 30px 0 5px 25px; */
+    font-size: 80%;
+}
+.max i{
+    font-weight: 1000;
+}
+.min i{
+    font-weight: 1000;
+}
+
+.min{
+    /* margin: 5px 0 0 25px; */
+    font-size: 80%;
+}
+
+
+/* Third row */
+.row_three{
+    display: flex;
+    flex-direction: column;
+}
+.city{
+    display: flex;
+    justify-content: center;
+}
+.state{
+    display: flex;
+    justify-content: center;
+}
+    
+/* Fourth row */
+.state_icon_svg{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .search_div{
     position: absolute;
@@ -26,6 +140,20 @@ html,body{
     left: 530px;
     top: 120px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .searchBtnfield{
     /* display: flex;
@@ -48,124 +176,5 @@ html,body{
 input::placeholder{
     font-size: 18px;
     opacity: 0.7;
-}
-
-.box{
-    background: linear-gradient(140deg, rgb(24, 12, 95), rgb(121, 19, 168));
-    /* background-color: rgb(94, 212, 216); */
-    position: absolute;
-    top: 30%;
-    left: 39%;
-    /* opacity: 0.7; */
-    width: 320px;
-    height: 500px;
-    box-shadow:1px 7px 5px 5px rgba(68, 68, 68, 0.6); ;
-}
-
-
-.city_name{
-    position: absolute;
-    left: 35%;
-    top: 43%;
-    font-size: 24px;
-    
-}
-
-.temp{
-    position: absolute;
-    left: 28%;
-    top: 20%;
-    font-size: 90px;
-    
-}
-
-.celci{
-    position: absolute;
-    left: 62%;
-    top: 23%;
-    font-size: 32px;
-}
-
-.max{
-    position: absolute;
-    left: 61%;
-    top: 31%;
-    font-size: 12px;
-}
-.max i{
-    font-size: 18px;
-}
-
-.min{
-    position: absolute;
-    left: 61%;
-    top: 35%;
-    font-size: 12px;
-}
-.min i{
-    font-size: 18px;
-}
-
-
-
-.span{
-    position: absolute;
-    left: 36%;
-    top: 7%;
-    font-size: 60px;
-}
-
-.date{
-    position: absolute;
-    top: 40%;
-    left: 75%;
-    font-size: 20px;
-}
-
-.state{
-    position: absolute;
-    left: 38%;
-    top: 49%;
-    font-size: 16px;
-}
-
-.predictability{
-    position: absolute;
-    left: 2%;
-    top: 3%;
-    font-size: 14px;
-}
-
-.humidity{
-    position: absolute;
-    top: 3%;
-    left: 40%;
-    font-size: 14px;
-}
-
-.wind{
-    position: absolute;
-    top: 3%;
-    left: 75%;
-    font-size: 14px;
-}
-
-.state_icon_svg{
-    position: absolute;
-    top: 56%;
-    left: 38%;
-    height: 100px;
-    width: 100px;
-}
-
-table{
-    
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    text-align: center;
-    width: 500px;
-    height: 100px;
-    font-size: 20px;
 }
 
