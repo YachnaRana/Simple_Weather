@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-weight: normal;
 }
 
 html,body{
+    /* background-image: url('vendors/img/back03.jpg'); */
     background-color: rgb(47, 105, 105);
     background-size: cover;
     background-position: center;
@@ -17,28 +18,41 @@ html,body{
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-
+/* .section-weather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
 .flex_outer{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
+/* 
 .row{
     max-width: 320px;
     margin: 4% auto 0 auto;
-}
+} */
 
 .container{
     align-self: center;
     width: 320px;
     height: 500px;
     box-shadow:1px 7px 5px 5px rgba(68, 68, 68, 0.6);
-    background: linear-gradient(140deg, rgb(24, 12, 95), rgb(121, 19, 168));
+    background: linear-gradient(0deg,#93b5c0,#14dbe2);
     display: inline-block;
+    margin-top: 5%;
+}
+
+/* =========================================search nav bar============================================== */
+#logo{
+    width: 45px;
+    height: 45px;
 }
 
 /*========================================== Search Bar =================================================*/
-.search_div{
+/* .search_div{
     align-self: center;
     width: 250px;
     margin-top: 7%;
@@ -61,56 +75,67 @@ input::placeholder{
 .search_btn{
     height: 50px;
     width: 40px;
-}
+} */
 
 /*============================================= First row ===================================================*/
 .row_one{
-    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    height: 22%;
+    padding: 2% 0 2% 0;
+    align-items: center;
 }
 
 .predictability{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
+    /* flex-basis: 100px ; */
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
    
-}
-.predictability img{
-    margin-right: 7px;
 }
 
 .humidity{
+    /* flex-basis: 100px; */
+    justify-content: space-evenly;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.humidity img{
-    margin-right: 7px;
+    width: 33%;
+    flex-direction: column;
+    align-items: center;
+
 }
 
+
 .wind{
+    /* flex-basis: 100px; */
+    justify-content: space-evenly;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.wind img{
-    margin-right: 7px;
+    width: 33%;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 /*============================================ Second row ===================================================*/
-
+.row_two{
+    display: flex;
+    flex-direction: row;
+    /* padding: 2% 0 2% 0; */
+    align-items: center;
+}
 
 .temperature{
     display: flex;
-    justify-content: flex-end;
-    align-content: space-between;
-    flex-wrap: wrap;
+    width: 70%;
     font-size: 600%;
-    /* margin-right: -30px; */
+    justify-content: flex-end;
+   
 }
 .min-max{
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
+  
 }
 .max{
     /* margin: 30px 0 5px 25px; */
@@ -133,6 +158,8 @@ input::placeholder{
 .row_three{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 20%;
 }
 .city{
     display: flex;
@@ -144,12 +171,17 @@ input::placeholder{
 }
     
 /*========================================= Fourth row ==================================================*/
-
+.row_four{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .state_icon_svg{
     display: flex;
     justify-content: center;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
+    
 }
 
 
