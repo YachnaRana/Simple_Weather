@@ -18,21 +18,52 @@ html,body{
     overflow-x: hidden;
 }
 
+.flex_outer{
+    display: flex;
+    flex-direction: column;
+}
+
 .row{
     max-width: 320px;
     margin: 4% auto 0 auto;
 }
 
 .container{
-    background: linear-gradient(140deg, rgb(24, 12, 95), rgb(121, 19, 168));
-    margin: 13% 41% 1% 39%;
+    align-self: center;
     width: 320px;
     height: 500px;
-    box-shadow:1px 7px 5px 5px rgba(68, 68, 68, 0.6); ;
+    box-shadow:1px 7px 5px 5px rgba(68, 68, 68, 0.6);
+    background: linear-gradient(140deg, rgb(24, 12, 95), rgb(121, 19, 168));
     display: inline-block;
 }
 
-/* First row */
+/*========================================== Search Bar =================================================*/
+.search_div{
+    align-self: center;
+    width: 250px;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+
+.search_field{
+    width: 250px;
+    height: 45px;
+    border: black 1px solid;
+    border-radius: 32px 32px 32px 32px;
+    cursor: text;  
+}
+
+input::placeholder{
+    font-size: 140%;
+    opacity: 0.7;
+}
+
+.search_btn{
+    height: 50px;
+    width: 40px;
+}
+
+/*============================================= First row ===================================================*/
 .row_one{
     margin-bottom: 60px;
 }
@@ -41,6 +72,10 @@ html,body{
    display: flex;
    flex-direction: row;
    justify-content: center;
+   
+}
+.predictability img{
+    margin-right: 7px;
 }
 
 .humidity{
@@ -48,14 +83,20 @@ html,body{
     flex-direction: row;
     justify-content: center;
 }
+.humidity img{
+    margin-right: 7px;
+}
 
 .wind{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+.wind img{
+    margin-right: 7px;
+}
 
-/* Second row */
+/*============================================ Second row ===================================================*/
 
 
 .temperature{
@@ -78,17 +119,17 @@ html,body{
 .max i{
     font-weight: 1000;
 }
-.min i{
-    font-weight: 1000;
-}
 
 .min{
     /* margin: 5px 0 0 25px; */
     font-size: 80%;
 }
+.min i{
+    font-weight: 1000;
+}
 
 
-/* Third row */
+/*======================================== Third row =======================================================*/
 .row_three{
     display: flex;
     flex-direction: column;
@@ -102,7 +143,8 @@ html,body{
     justify-content: center;
 }
     
-/* Fourth row */
+/*========================================= Fourth row ==================================================*/
+
 .state_icon_svg{
     display: flex;
     justify-content: center;
@@ -111,70 +153,4 @@ html,body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.search_div{
-    position: absolute;
-    width: 400px;
-    height: 80px;
-    border-radius: 10px;
-    left: 530px;
-    top: 120px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.searchBtnfield{
-    /* display: flex;
-    justify-items: stretch; */
-}
-
-.search_field{
-    position: absolute;
-    top: 40%;
-    left: 27%;
-    width: 250px;
-    height: 40px;
-    border: black 1px solid;
-    border-radius: 32px 32px 32px 32px;
-    cursor: pointer;
-}
-
-
-
-input::placeholder{
-    font-size: 18px;
-    opacity: 0.7;
-}
 
